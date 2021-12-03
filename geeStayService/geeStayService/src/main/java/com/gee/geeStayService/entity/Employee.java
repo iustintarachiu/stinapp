@@ -3,8 +3,10 @@ package com.gee.geeStayService.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import com.fasterxml.jackson.annotation.*;
 import java.util.Date;
 import java.util.List;
+import java.io.*;
 
 @Entity(name = "employee")
 @NoArgsConstructor
@@ -21,7 +23,7 @@ public class Employee {
     private Long phonenumber;
     @Temporal(TemporalType.DATE)
     private Date hiredate;
-    private Long mangerhrid;
+    private String manageremail;
     private String departmentname;
 
 }

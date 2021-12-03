@@ -14,7 +14,7 @@ import java.util.Date;
 public class Analysis {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long analysisid;
 
     @Temporal(TemporalType.DATE)
